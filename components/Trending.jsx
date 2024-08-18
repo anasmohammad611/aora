@@ -4,6 +4,7 @@ import {
 	FlatList,
 	TouchableOpacity,
 	ImageBackground,
+	Image,
 } from "react-native";
 import React, { useState } from "react";
 import * as Animatable from "react-native-animatable";
@@ -15,13 +16,13 @@ const zoomIn = {
 		scale: 0.9,
 	},
 	1: {
-		scale: 1,
+		scale: 1.1,
 	},
 };
 
 const zoomOut = {
 	0: {
-		scale: 1,
+		scale: 1.1,
 	},
 	1: {
 		scale: 0.9,
@@ -79,6 +80,10 @@ const Trending = ({ posts }) => {
 			setActiveItem(viewableItems[0].key);
 		}
 	};
+
+	console.log('====================================');
+	console.log('trending-------------', posts);
+	console.log('====================================');
 
 	return (
 		<FlatList
