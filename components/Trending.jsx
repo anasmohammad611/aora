@@ -81,9 +81,6 @@ const Trending = ({ posts }) => {
 		}
 	};
 
-	console.log('====================================');
-	console.log('trending-------------', posts);
-	console.log('====================================');
 
 	return (
 		<FlatList

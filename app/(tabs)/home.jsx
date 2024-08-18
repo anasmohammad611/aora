@@ -32,14 +32,16 @@ const Home = () => {
 		await refetch();
 		setRefreshing(false);
 	};
-
+	console.log("====================================");
+	console.log(posts);
+	console.log("====================================");
 	return (
 		<SafeAreaView className="bg-primary h-full">
 			<FlatList
 				data={posts}
 				keyExtractor={(item) => item.$id}
 				renderItem={({ item }) => (
-					<VideoCard video={item} />
+					<VideoCard video={item} displayMenu = {true}/>
 					// <Text />
 				)}
 				ListHeaderComponent={() => (
