@@ -70,6 +70,7 @@ const Create = () => {
 			Alert.alert("Error", error.message);
 		} finally {
 			setForm({ title: "", video: null, thumbnail: null, prompt: "" });
+			setUploading(false);
 		}
 	};
 
